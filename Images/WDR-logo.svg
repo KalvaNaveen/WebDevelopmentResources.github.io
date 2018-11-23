@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#000000" height="401.36862" id="svg_14" rx="23" ry="23" stroke="#f40707" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" transform="rotate(20 479.866 220.27)" width="204.909837" x="377.41156" y="19.58577"/>
+  <rect fill="#000000" height="402.598411" id="svg_13" rx="23" ry="23" stroke="#f40707" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" transform="rotate(20 321.00392150878906,219.50375175476074)" width="208.893229" x="216.557316" y="18.204542"/>
+  <rect fill="#000000" height="388.413218" id="svg_11" rx="23" ry="23" stroke="#f40707" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" transform="rotate(20 159.576 212.191)" width="209.231785" x="54.960495" y="17.984358"/>
+  <text fill="#ffffff" font-family="Fantasy" font-size="24" font-style="italic" id="svg_9" stroke="#f40707" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="rotate(1.72567 492.807 223.824) matrix(12.358 0 0 12.332 -5563.94 -1387.62)" x="487.768679" xml:space="preserve" y="140.257168">R</text>
+  <text fill="#ffffff" font-family="Fantasy" font-size="24" font-style="italic" id="svg_8" stroke="#f40707" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="rotate(1.65956 344.825 223.927) matrix(12.8456 0 0 12.9893 -4305.07 -1588.28)" x="359.24298" xml:space="preserve" y="148.897544">D</text>
+  <text fill="#ffffff" font-family="Fantasy" font-size="24" font-style="italic" id="svg_6" stroke="#f40707" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="rotate(-0.734259 173.752 221.358) matrix(10.9536 0 0 12.8634 -3663.34 -1584.64)" x="346.968059" xml:space="preserve" y="149.989547">W</text>
+ </g>
+</svg>

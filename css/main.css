@@ -1,0 +1,476 @@
+/*-----------------------------------------------------
+------------------------ Body CSS ---------------------
+------------------------------------------------------*/
+body{margin: 0;
+    padding: 0;
+    background: #000214; 
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+}
+/*-----------------------------------------------------
+----------------- Page Main Header CSS ----------------
+------------------------------------------------------*/
+.Main_header{
+    padding-top: 2.5rem;
+    display: flex;
+    justify-content: center;  
+    height:100%;
+    background: #000214;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(320deg, #4b4848, #000214);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(320deg, #4b4848, #000214);
+   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+/*-----------------------------------------------------
+--------------- Page Main Header Logo CSS --------------
+------------------------------------------------------*/
+.Main_header_logo {
+    font-size: 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+  
+}
+/*-----------------------------------------------------
+--------- Page Main Header Logo Animation CSS ---------
+------------------------------------------------------*/
+.Main_header_logo i{  
+     animation:  scale 5s linear  infinite alternate;
+    -webkit-animation: scale 5s linear  infinite alternate;}
+@keyframes scale {
+    0%{transform: scale3d(.9, .9, .9)}
+    100%{transform: scale3d(1.2, 1.2, 1.2)}
+}   
+/*-----------------------------------------------------
+---------- Page Main Content of Header CSS ------------
+------------------------------------------------------*/
+.Main_header  h3{
+   margin: 0;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 3.5rem;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 800;
+}
+/*-----------------------------------------------------
+---------- Page Main Content Description CSS ----------
+------------------------------------------------------*/
+.Main_header  p{
+   padding: 0 5% 2% 5%; 
+   font-size: 1.8rem;
+   text-align: center;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-weight: 500;
+}
+/*-----------------------------------------------------
+------------- Front & Back End Section CSS ------------
+------------------------------------------------------*/
+.front__End_section,.back__End_section,.developer__support_section{
+    background-color:white;
+    border:5px solid  #000214; 
+}
+/*-----------------------------------------------------
+--------- Front & Back End Section Header CSS ---------
+------------------------------------------------------*/
+.main__section_header{
+    background:  #000000;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 580;
+    position: sticky;
+    top: 0;
+}
+/*-----------------------------------------------------
+------------------- Resource Section CSS --------------
+------------------------------------------------------*/
+.resource_section{
+    padding: 2.4rem 0;
+}
+.resource_section:nth-child(even){
+    background-color: #F9FAFA;
+}
+/*-----------------------------------------------------
+------------ Resource Section Container CSS -----------
+------------------------------------------------------*/
+.container{
+    margin: 0 auto;
+    width: calc(100% - 80px);
+}
+/*-----------------------------------------------------
+--------- Resource Section container Header with Icon CSS --------
+------------------------------------------------------*/
+.container header{
+    text-align: center; 
+}
+.resource_section_header_icon{
+    font-size: 3.5rem;
+    margin:0; 
+}
+.container h2{
+    font-size: 2.4rem;
+    margin: 0;
+    margin-bottom:2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/*-----------------------------------------------------
+---------- Resource Section container Icon CSS --------
+------------------------------------------------------*/
+
+/*------------------------------------------------------------
+--- Resource Article section Implemented by Using CSS Grid ---
+-------------------------------------------------------------*/
+.resource_article_section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(240px, auto); 
+    border: 1px solid black;
+    border-radius:5px;  
+}
+.resource__block1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-area: block1;
+   
+}
+.resource__block2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-area: block2;
+}
+.resource__block3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    grid-area: block3;
+}
+.resource__block4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+    grid-area: block4;
+}
+.resource__block5{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    grid-area: block5;
+}
+.resource__block6{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-area: block6;
+}
+.resource__block7{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    grid-area: block7;
+}
+.resource__block8{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    grid-area: block8;
+}
+.resource__block9{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    grid-area: block9;
+}
+.resource__block10{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    grid-area: block10;
+}
+.resource__block11{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    grid-area: block11;
+}
+.resource__block12{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    grid-area: block12;
+}
+.resource__block13{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    grid-area: block13;
+}
+.resource__block14{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    grid-area: block14;
+}
+.resource__block15{
+    grid-column: 3/4;
+    grid-row: 4/5;          
+    grid-area: block15;
+}
+.resource__block16{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    grid-area: block16;
+}
+/*-------------------------------------------------
+---- HTML Resource section Grid Implementation ----
+---------------------------------------------------*/
+.resource_section_HTML{
+    grid-template-areas: "block1 block2 block3 block4";
+}
+.resource_section_CSS{
+    grid-template-areas: "block1 block2 block3 block4"
+    "block5 block6 block7 block8"
+    "block10 block9 . .";
+}
+.resource_section_JS{
+    grid-template-areas: "block1 block2 block3 block4"
+    "block5 block6 block7 block8"
+    "block9 block10 block11 block12 ";
+}
+.resource_section_Fonts{
+    grid-template-areas: "block1 block2 block3 block4"
+    "block5 block6 . .";
+}
+.resource_section_Colors{
+    grid-template-areas: "block1 block2 block3 block4"
+    "block5 block6 block7 block8";
+}
+
+.resource_section_Images{
+    grid-template-areas: "block1 block2 block3 block4"
+    "block5 block6 block7 block8"
+    "block9 block10 block11 . ";
+}
+.resource_section_Icon{grid-template-areas: "block1 block2 block3 block4"
+    "block5 block6 block7 block8"
+    "block9 block10 block11 block12 ";}
+
+    .resource_section_DI{
+        grid-template-areas: "block1 block2 block3 block4"
+        "block5 block6 . .";
+    }
+    .resource_section_Community{grid-template-areas: "block1 block2 block3 block4"
+        "block5 block6 block7 block8";}
+
+        .resource_section_Optimization{
+            grid-template-areas: "block1 block2 block3 block4"
+            "block5 block6 block7 block8"
+            "block9 block10 block11 block12 "
+            "block13 block14 . . ";
+        }
+        .resource_section_NodeJs{grid-template-areas: "block1 block2 block3 block4"
+            "block5 block6 block7 block8";}
+            .resource_section_DB{grid-template-areas: "block1 block2 block3 block4"
+                "block5 . . .";}
+                .resource_section_Practice{
+                    grid-template-areas: "block1 block2 block3 block4"
+                    "block5 block6 . .";
+                }
+                .resource_section_Library{
+                    grid-template-areas:  "block1 block2 block3 block4"
+                    "block5 block6 block7 block8";}
+/*--------------------------------------------------------------
+---- Resource Section Chess style Blocks implementation CSS ----
+---------------------------------------------------------------*/
+.resource__even,.resource__odd{
+    padding: 5%
+}
+.resource__even:nth-child(even){
+    color: white;
+    background-color: black;
+}
+.resource__odd:nth-child(odd){
+    color: white;
+    background-color: black;
+}
+.resource__Icon{
+    width: 16%;
+}
+.resource__heading a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #252525;
+    font-weight: 500;
+}
+.resource__text{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 100;
+    color:#7c7c7c;
+}
+.resource__even:nth-child(even) a,.resource__odd:nth-child(odd) a{
+    color:#dadada;
+}
+.resource__even:nth-child(even) a:hover,.resource__odd:nth-child(odd) a:hover,a:hover{
+    color: #e9750a
+}
+/*-----------------------------------------------------
+---------------------- footer CSS ---------------------
+------------------------------------------------------*/
+footer{
+    height: 40vh;
+}
+footer div h3{
+    text-align: center;
+    color: #F9FAFA;
+}
+footer span{
+    color: aqua;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```````````````` @Media Query Section CSS ````````````
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*-----------------------------------------------------
+------------------- Device Width @ 1080px -------------
+------------------------------------------------------*/
+@media only screen and (max-width:1080px){
+    header{
+        text-align: center;
+    }
+    .container{
+    margin: 0 auto;
+    width: calc(100% - 20px);
+    }
+    .resource_article_section{
+        grid-template-columns: repeat(3,1fr);
+        grid-auto-rows: minmax(240px, auto);  
+        grid-template-areas: "block1 block2 block3"
+        "block4 block6 block5"
+        "block8 block7 ." 
+    }
+    .Main_header_logo {
+        font-size: 9rem;
+    }
+    .Main_header  h3{
+        font-size: 2.9rem;
+        font-weight: 500;
+     }
+     .Main_header  p{
+        font-size: 1.5rem;
+        font-weight: 500;
+     }
+     
+    .main__section_header{
+        font-size: 1.7rem;
+    }
+     .resource_section_header_icon{
+        font-size: 3rem;
+    }
+    .container h2{
+        font-size: 1.8rem;
+        margin-bottom:1.4rem;
+        font-weight: 700;
+    }
+    .resource__heading{
+        font-size: 1.2rem;
+    }
+    .resource__text{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 300;
+    }
+}
+/*-----------------------------------------------------
+------------------- Device Width @ 768px --------------
+------------------------------------------------------*/
+@media only screen and (max-width:768px){
+    header{
+        text-align: center;
+    } 
+    .container{
+        margin: 0 auto;
+        width: calc(100% - 30px);
+    }
+    .resource_article_section{
+        grid-template-columns: repeat(4,1fr);
+        grid-auto-rows: minmax(240px, auto);  
+        grid-template-areas: "block1 block1 block2 block2"
+        "block4 block4 block3 block3"
+        "block6 block6 block5 block5 "
+        "block7 block7 block8 block8 "
+    }
+    .Main_header_logo {
+        font-size: 8rem;
+    }
+    .Main_header  h3{
+        font-size: 2.8rem;
+        font-weight: 500;
+     }
+     .Main_header  p{
+        font-size: 1.4rem;
+        font-weight: 400;
+     }
+     
+    .Front__BackEnd_header{
+        font-size: 1.6rem;
+    }
+     .resource_section_header_icon{
+        font-size: 2.8rem;
+    }
+    .container h2{
+        font-size: 1.6rem;
+        margin-bottom:1.2rem;
+        font-weight: 600;
+    }
+    .resource__heading{
+        font-size: 1.1rem;
+    }
+    .resource__text{
+        font-size: .9rem;
+        line-height: 1.1rem;
+        font-weight: 200;
+    }
+}
+/*-----------------------------------------------------
+------------------- Device Width @ 500px --------------
+------------------------------------------------------*/
+@media only screen and (max-width:425px){
+    header{
+        text-align: center;
+    }
+    .container{
+    margin: 0 auto;
+    width: calc(100% - 10px);
+    }
+ .resource_article_section{
+     display: flex;flex-flow: column ;
+ }
+    .Main_header_logo {
+        font-size: 7rem;
+    }
+    .Main_header  h3{
+        font-size: 2.8rem;
+        font-weight: 500;
+     }
+     .Main_header  p{
+        font-size: 1.5rem;
+        font-weight: 300;
+     }
+     
+    .Front__BackEnd_header{
+        font-size: 1.4rem;
+        text-align: center;
+    }
+     .resource_section_header_icon{
+        font-size: 2.8rem;
+    }
+    .container h2{
+        font-size: 1.6rem;
+        margin-bottom:1rem;
+        font-weight: 400;
+    }
+    .resource__heading{
+        font-size: 1.1rem;
+    }
+    .resource__text{
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-weight: 200;
+    }
+}
