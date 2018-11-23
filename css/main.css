@@ -251,6 +251,15 @@ body{margin: 0;
 .resource:nth-child(even){
     background-color: black;
 }
+.resource:nth-child(even) a{
+    color:#dadada;  
+}
+.resource:nth-child(even) .resource__text{
+    color:#c4c1c1;  
+}
+.resource a:hover{
+color: #e9750a;
+} 
 .resource__Icon{
     width: 16%;
 }
@@ -260,21 +269,14 @@ body{margin: 0;
     color: #252525;
     font-weight: 500;
 }
-.resource__text{
+
+ .resource__text{
     font-size: 1rem;
     line-height: 1.5rem;
-    color:#313131;
-    font-weight: 400;
+    color:#303030;
+    font-weight: 300;
 }
-.resource:nth-child(even) a{
-        color:#dadada;  
-}
-.resource:nth-child(even) .resource__text{
-    color:#868585;
-}
-.resource a:hover{
-    color: #e9750a;
-} 
+
 /*-----------------------------------------------------
 ---------------------- footer CSS ---------------------
 ------------------------------------------------------*/
