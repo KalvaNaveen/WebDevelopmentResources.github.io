@@ -93,7 +93,7 @@ body{margin: 0;
 .resource_section{
     padding: 2.4rem 0;
 }
-.resource_section:nth-child(even){
+.resource_section:nth-child(odd){
     background-color: #F9FAFA;
 }
 /*-----------------------------------------------------
@@ -132,7 +132,7 @@ body{margin: 0;
 .resource_article_section{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-auto-rows: minmax(240px, auto); 
+    grid-auto-rows: minmax(200px, auto); 
     border: 1px solid black;
     border-radius:5px;  
 }
@@ -218,75 +218,37 @@ body{margin: 0;
     grid-area: block16;
 }
 /*-------------------------------------------------
----- HTML Resource section Grid Implementation ----
+---- Resource section Grid Arragement ----
 ---------------------------------------------------*/
-.resource_section_HTML{
+.resource_article-4blocks{
     grid-template-areas: "block1 block2 block3 block4";
 }
-.resource_section_CSS{
+.resource_article-6blocks{ 
     grid-template-areas: "block1 block2 block3 block4"
-    "block5 block6 block7 block8"
-    "block10 block9 . .";
+    "block6 block5 . .";
 }
-.resource_section_JS{
+.resource_article-8blocks{ 
     grid-template-areas: "block1 block2 block3 block4"
-    "block5 block6 block7 block8"
-    "block9 block10 block11 block12 ";
+    "block6 block5 block8 block7";
 }
-.resource_section_Fonts{
+.resource_article-12blocks{
     grid-template-areas: "block1 block2 block3 block4"
-    "block5 block6 . .";
+                         "block6 block5 block8 block7"
+                         "block9 block10 block11 block12";
 }
-.resource_section_Colors{
-    grid-template-areas: "block1 block2 block3 block4"
-    "block5 block6 block7 block8";
+.resource_article-16blocks{ grid-template-areas: "block1 block2 block3 block4"
+    "block6 block5 block8 block7"
+    "block9 block10 block11 block12 "
+    "block14 block13 . . ";
 }
 
-.resource_section_Images{
-    grid-template-areas: "block1 block2 block3 block4"
-    "block5 block6 block7 block8"
-    "block9 block10 block11 . ";
-}
-.resource_section_Icon{grid-template-areas: "block1 block2 block3 block4"
-    "block5 block6 block7 block8"
-    "block9 block10 block11 block12 ";}
-
-    .resource_section_DI{
-        grid-template-areas: "block1 block2 block3 block4"
-        "block5 block6 . .";
-    }
-    .resource_section_Community{grid-template-areas: "block1 block2 block3 block4"
-        "block5 block6 block7 block8";}
-
-        .resource_section_Optimization{
-            grid-template-areas: "block1 block2 block3 block4"
-            "block5 block6 block7 block8"
-            "block9 block10 block11 block12 "
-            "block13 block14 . . ";
-        }
-        .resource_section_NodeJs{grid-template-areas: "block1 block2 block3 block4"
-            "block5 block6 block7 block8";}
-            .resource_section_DB{grid-template-areas: "block1 block2 block3 block4"
-                "block5 . . .";}
-                .resource_section_Practice{
-                    grid-template-areas: "block1 block2 block3 block4"
-                    "block5 block6 . .";
-                }
-                .resource_section_Library{
-                    grid-template-areas:  "block1 block2 block3 block4"
-                    "block5 block6 block7 block8";}
 /*--------------------------------------------------------------
 ---- Resource Section Chess style Blocks implementation CSS ----
 ---------------------------------------------------------------*/
-.resource__even,.resource__odd{
-    padding: 5%
+.resource{
+    padding: 3%
 }
-.resource__even:nth-child(even){
-    color: white;
-    background-color: black;
-}
-.resource__odd:nth-child(odd){
-    color: white;
+.resource:nth-child(even){
     background-color: black;
 }
 .resource__Icon{
@@ -301,15 +263,18 @@ body{margin: 0;
 .resource__text{
     font-size: 1rem;
     line-height: 1.5rem;
-    font-weight: 100;
-    color:#7c7c7c;
+    color:#313131;
+    font-weight: 400;
 }
-.resource__even:nth-child(even) a,.resource__odd:nth-child(odd) a{
-    color:#dadada;
+.resource:nth-child(even) a{
+        color:#dadada;  
 }
-.resource__even:nth-child(even) a:hover,.resource__odd:nth-child(odd) a:hover,a:hover{
-    color: #e9750a
+.resource:nth-child(even) .resource__text{
+    color:#868585;
 }
+.resource a:hover{
+    color: #e9750a;
+} 
 /*-----------------------------------------------------
 ---------------------- footer CSS ---------------------
 ------------------------------------------------------*/
@@ -339,10 +304,30 @@ footer span{
     }
     .resource_article_section{
         grid-template-columns: repeat(3,1fr);
-        grid-auto-rows: minmax(240px, auto);  
+    }
+    .resource_article-4blocks{
         grid-template-areas: "block1 block2 block3"
-        "block4 block6 block5"
-        "block8 block7 ." 
+        "block4 . .";
+    }
+    .resource_article-6blocks{ 
+        grid-template-areas: "block1 block2 block3"
+        "block4 block5 block6";
+    }.resource_article-8blocks{ 
+        grid-template-areas: "block1 block2 block3"
+        "block4 block5 block6" 
+        "block7 block8 .";
+    }
+    .resource_article-12blocks{
+        grid-template-areas: "block1 block2 block3"
+                             "block4 block5 block6"
+                             "block7 block8 block9"
+                             "block10 block11 block12";
+    }
+    .resource_article-16blocks{ grid-template-areas: "block1 block2 block3"
+        "block4 block5 block6"
+        "block7 block8 block9"
+        "block10 block11 block12"
+        "block13 block14 .";
     }
     .Main_header_logo {
         font-size: 9rem;
@@ -368,10 +353,10 @@ footer span{
         font-weight: 700;
     }
     .resource__heading{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .resource__text{
-        font-size: 1rem;
+        font-size: .9rem;
         line-height: 1.2rem;
         font-weight: 300;
     }
@@ -385,15 +370,42 @@ footer span{
     } 
     .container{
         margin: 0 auto;
-        width: calc(100% - 30px);
+        width: calc(100% - 20px);
     }
     .resource_article_section{
         grid-template-columns: repeat(4,1fr);
-        grid-auto-rows: minmax(240px, auto);  
+    }
+    .resource_article-4blocks{
         grid-template-areas: "block1 block1 block2 block2"
-        "block4 block4 block3 block3"
-        "block6 block6 block5 block5 "
-        "block7 block7 block8 block8 "
+        " block4 block4 block3 block3";
+    }
+    .resource_article-6blocks{ 
+        grid-template-areas:"block1 block1 block2 block2"
+        " block4 block4 block3 block3"
+        "block5 block5 block6 block6";
+    }.resource_article-8blocks{ 
+        grid-template-areas: "block1 block1 block2 block2"
+        " block4 block4 block3 block3"
+        "block5 block5 block6 block6"
+       "block8 block8 block7 block7";
+    }
+    .resource_article-12blocks{
+        grid-template-areas: "block1 block1 block2 block2"
+        " block4 block4 block3 block3"
+        "block5 block5 block6 block6"
+       "block8 block8 block7 block7"
+       "block9 block9 block10 block10 "
+       "block12 block12 block11 block11"
+       ;
+    }
+    .resource_article-16blocks{ grid-template-areas:  "block1 block1 block2 block2"
+        " block4 block4 block3 block3"
+        "block5 block5 block6 block6"
+       "block8 block8 block7 block7"
+       "block9 block9 block10 block10 "
+       "block12 block12 block11 block11"
+       "block13 block13 block14 block14"
+       ;
     }
     .Main_header_logo {
         font-size: 8rem;
