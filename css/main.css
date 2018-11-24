@@ -3,7 +3,7 @@
 ------------------------------------------------------*/
 body{margin: 0;
     padding: 0;
-    background: #000214; 
+    background: black; 
     box-sizing: border-box;
     text-rendering: optimizeLegibility;
 }
@@ -13,14 +13,11 @@ body{margin: 0;
 .Main_header{
     padding-top: 2.5rem;
     display: flex;
-    justify-content: center;  
-    height:100%;
-    background: #000214;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(320deg, #4b4848, #000214);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(320deg, #4b4848, #000214);
-   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     flex-direction: column;
     align-items: center;
+    background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(320deg, #000000, #434343); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(320deg, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
 }
 /*-----------------------------------------------------
@@ -28,11 +25,9 @@ body{margin: 0;
 ------------------------------------------------------*/
 .Main_header_logo {
     font-size: 10rem;
-    text-align: center;
     display: flex;
     justify-content: center;
     font-weight: 300;
-  
 }
 /*-----------------------------------------------------
 --------- Page Main Header Logo Animation CSS ---------
@@ -53,8 +48,7 @@ body{margin: 0;
    font-size: 3.5rem;
    text-transform: uppercase;
    letter-spacing: 1px;
-   font-weight: 800;
-}
+   font-weight: 800; }
 /*-----------------------------------------------------
 ---------- Page Main Content Description CSS ----------
 ------------------------------------------------------*/
@@ -64,13 +58,15 @@ body{margin: 0;
    text-align: center;
    font-family: 'Open Sans Condensed', sans-serif;
    font-weight: 500;
+   text-transform: uppercase;
+  
 }
 /*-----------------------------------------------------
 ------------- Front & Back End Section CSS ------------
 ------------------------------------------------------*/
 .front__End_section,.back__End_section,.developer__support_section{
     background-color:white;
-    border:5px solid  #000214; 
+    border:5px solid  #000000; 
 }
 /*-----------------------------------------------------
 --------- Front & Back End Section Header CSS ---------
@@ -116,7 +112,7 @@ body{margin: 0;
 .container h2{
     font-size: 2.4rem;
     margin: 0;
-    margin-bottom:2rem;
+    margin-bottom:3rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
@@ -133,8 +129,6 @@ body{margin: 0;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-auto-rows: minmax(200px, auto); 
-    border: 1px solid black;
-    border-radius:5px;  
 }
 .resource__block1{
     grid-column: 1/2;
@@ -223,20 +217,17 @@ body{margin: 0;
 .resource_article-4blocks{
     grid-template-areas: "block1 block2 block3 block4";
 }
-.resource_article-6blocks{ 
-    grid-template-areas: "block1 block2 block3 block4"
-    "block6 block5 . .";
-}
-.resource_article-8blocks{ 
+.resource_article-6blocks,.resource_article-8blocks{ 
     grid-template-areas: "block1 block2 block3 block4"
     "block6 block5 block8 block7";
 }
-.resource_article-12blocks{
+.resource_article-10blocks,.resource_article-12blocks{
     grid-template-areas: "block1 block2 block3 block4"
                          "block6 block5 block8 block7"
                          "block9 block10 block11 block12";
 }
-.resource_article-16blocks{ grid-template-areas: "block1 block2 block3 block4"
+.resource_article-16blocks{ 
+    grid-template-areas: "block1 block2 block3 block4"
     "block6 block5 block8 block7"
     "block9 block10 block11 block12 "
     "block14 block13 . . ";
@@ -246,7 +237,12 @@ body{margin: 0;
 ---- Resource Section Chess style Blocks implementation CSS ----
 ---------------------------------------------------------------*/
 .resource{
-    padding: 3%
+    padding: 3%;
+    border-radius: 2px;
+}
+
+.resource:nth-child(odd){   
+    background-color:#f5f5f5;
 }
 .resource:nth-child(even){
     background-color: black;
@@ -269,25 +265,55 @@ color: #e9750a;
     color: #252525;
     font-weight: 500;
 }
-
  .resource__text{
     font-size: 1rem;
     line-height: 1.5rem;
     color:#303030;
     font-weight: 300;
 }
-
 /*-----------------------------------------------------
 ---------------------- footer CSS ---------------------
 ------------------------------------------------------*/
-footer{
-    height: 40vh;
-}
-footer div h3{
+
+.footer__top{
+    margin: 4% 5%;
+    color: white;
+    display: flex;
+    flex-flow: row;
     text-align: center;
-    color: #F9FAFA;
+    justify-content: space-evenly;
 }
-footer span{
+.wdr_about img{
+    background: #F9FAFA;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.wdr_about-content{padding: 0 10%;
+    align-self: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    font-weight: 500;}
+.wdr_about-content a{
+        text-decoration: none;
+        color: aqua;
+    }
+.links i{
+    font-size: 2.5rem;
+    color: #F9FAFA;
+letter-spacing: 1rem;
+}
+.footer__down h3{
+    color: #F9FAFA;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    
+}
+.footer__down span{
     color: aqua;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -307,11 +333,7 @@ footer span{
     .resource_article_section{
         grid-template-columns: repeat(3,1fr);
     }
-    .resource_article-4blocks{
-        grid-template-areas: "block1 block2 block3"
-        "block4 . .";
-    }
-    .resource_article-6blocks{ 
+    .resource_article-4blocks,.resource_article-6blocks{ 
         grid-template-areas: "block1 block2 block3"
         "block4 block5 block6";
     }.resource_article-8blocks{ 
@@ -319,7 +341,7 @@ footer span{
         "block4 block5 block6" 
         "block7 block8 .";
     }
-    .resource_article-12blocks{
+    .resource_article-10blocks,.resource_article-12blocks{
         grid-template-areas: "block1 block2 block3"
                              "block4 block5 block6"
                              "block7 block8 block9"
@@ -362,6 +384,22 @@ footer span{
         line-height: 1.2rem;
         font-weight: 300;
     }
+    .footer__top{
+        flex-flow: column;
+        margin:6% 0 0 0;
+    }
+    .wdr_about img{
+        width: 85px;
+        height: 85px;
+    }
+    .wdr_about-content{
+        padding: 0 2%;
+        align-self: center;
+        font-size: 1.1rem;
+        font-weight: 500;}
+    .footer__down h3{
+        font-size: 1rem;
+    }
 }
 /*-----------------------------------------------------
 ------------------- Device Width @ 768px --------------
@@ -390,6 +428,13 @@ footer span{
         " block4 block4 block3 block3"
         "block5 block5 block6 block6"
        "block8 block8 block7 block7";
+    }
+    .resource_article-10blocks{
+        grid-template-areas: "block1 block1 block2 block2"
+        " block4 block4 block3 block3"
+        "block5 block5 block6 block6"
+       "block8 block8 block7 block7"
+       "block9 block9 block10 block10";
     }
     .resource_article-12blocks{
         grid-template-areas: "block1 block1 block2 block2"
@@ -440,6 +485,22 @@ footer span{
         line-height: 1.1rem;
         font-weight: 200;
     }
+    .footer__top{
+        flex-flow: column;
+        margin:8% 0 0 0;
+    }
+    .wdr_about img{
+        width: 75px;
+        height: 75px;
+    }
+    .wdr_about-content{
+        padding: 0 4%;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 400;}
+    .footer__down h3{
+        font-size: .9rem;
+    }
 }
 /*-----------------------------------------------------
 ------------------- Device Width @ 500px --------------
@@ -487,4 +548,21 @@ footer span{
         line-height: 1.2rem;
         font-weight: 200;
     }
+    .footer__top{
+        flex-flow: column;
+        margin:12% 0 0 0;
+    }
+    .wdr_about img{
+        width: 60px;
+        height: 60px;
+    }
+    .wdr_about-content{
+        padding: 0 5%;
+        align-self: center;
+        font-size: .9rem;
+        font-weight: 400;}
+    .footer__down h3{
+        font-size: .8rem;
+    }
+
 }
